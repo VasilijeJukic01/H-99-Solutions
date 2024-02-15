@@ -1,0 +1,62 @@
+name:                haskell99
+version:             0.1.0.0
+github:              "VasilijeJukic01/H-99-Solutions"
+license:             BSD-3-Clause
+author:              "Vasilije Jukic"
+maintainer:          "example@example.com"
+copyright:           "2024 Vasilije Jukic"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/VasilijeJukic01/H-99-Solutions#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Part1
+
+executables:
+  haskell99-exe:
+    main:                Main.hs
+    source-dirs:         app
+    other-modules:
+      - Part1
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - haskell99
+
+tests:
+  haskell99-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - haskell99
