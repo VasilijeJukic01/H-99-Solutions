@@ -26,6 +26,7 @@ library
   exposed-modules:
       Part1
   other-modules:
+      Part2
       Paths_haskell99
   autogen-modules:
       Paths_haskell99
@@ -40,6 +41,7 @@ executable haskell99-exe
   main-is: Main.hs
   other-modules:
       Part1
+      Part2
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N

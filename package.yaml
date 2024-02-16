@@ -43,6 +43,7 @@ executables:
     source-dirs:         app
     other-modules:
       - Part1
+      - Part2
     ghc-options:
     - -threaded
     - -rtsopts
