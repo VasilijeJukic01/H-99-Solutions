@@ -41,10 +41,7 @@ executables:
   haskell99-exe:
     main:                Main.hs
     source-dirs:         app
-    other-modules:
-    - Part1
-    - Part2
-    - Part3
+    other-modules: []
     ghc-options:
     - -threaded
     - -rtsopts

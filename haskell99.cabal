@@ -27,6 +27,8 @@ library
       Part1
       Part2
       Part3
+      Part4
+      Part5
       Paths_haskell99
   autogen-modules:
       Paths_haskell99
@@ -40,10 +42,6 @@ library
 
 executable haskell99-exe
   main-is: Main.hs
-  other-modules:
-      Part1
-      Part2
-      Part3
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
