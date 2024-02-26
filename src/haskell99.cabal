@@ -1,0 +1,69 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell99
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/VasilijeJukic01/H-99-Solutions#readme>
+homepage:       https://github.com/VasilijeJukic01/H-99-Solutions#readme
+bug-reports:    https://github.com/VasilijeJukic01/H-99-Solutions/issues
+author:         Vasilije Jukic
+maintainer:     example@example.com
+copyright:      2024 Vasilije Jukic
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/VasilijeJukic01/H-99-Solutions
+
+library
+  other-modules:
+      Part1
+      Part2
+      Part3
+      Part4
+      Part5
+      Part6
+      Paths_haskell99
+  autogen-modules:
+      Paths_haskell99
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , random
+  default-language: Haskell2010
+
+executable haskell99-exe
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , haskell99
+    , random
+  default-language: Haskell2010
+
+test-suite haskell99-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_haskell99
+  autogen-modules:
+      Paths_haskell99
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , haskell99
+    , random
+  default-language: Haskell2010
