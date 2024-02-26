@@ -29,6 +29,7 @@ library
       Part3
       Part4
       Part5
+      Part6
       Paths_haskell99
   autogen-modules:
       Paths_haskell99
